@@ -480,5 +480,104 @@
         </div>
       </div>
     </section>
+    <!-- input section -->
+    <section class="container mx-auto p-10">
+      <!-- Centered Button -->
+      <div class="flex justify-center mb-6">
+        <button
+          class="flex items-center px-4 py-2 bg-green-500 text-white font-bold rounded-full"
+        >
+          <i class="fas fa-arrow-right mr-2"></i>
+          Lets Connect
+        </button>
+      </div>
+
+      <!-- Heading -->
+      <h2 class="text-3xl font-bold text-center mb-4">Get in Touch</h2>
+
+      <!-- Short Description -->
+      <p class="text-gray-600 text-center mb-8">
+        We would love to hear from you. Fill out the form below and we will get
+        back to you as soon as possible.
+      </p>
+
+      <!-- Input Fields -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Name Fields -->
+        <div class="flex flex-col mb-4">
+          <label for="first-name" class="text-gray-700 mb-2"></label>
+          <input
+            type="text"
+            id="first-name"
+            class="p-3 border border-gray-300 rounded-lg w-full"
+            placeholder="First Name"
+          />
+        </div>
+        <div class="flex flex-col mb-4">
+          <label for="last-name" class="text-gray-700 mb-2"></label>
+          <input
+            type="text"
+            id="last-name"
+            class="p-3 border border-gray-300 rounded-lg w-full"
+            placeholder="Last Name"
+          />
+        </div>
+        <!-- Phone and Email -->
+        <div class="flex flex-col mb-4">
+          <label for="phone" class="text-gray-700 mb-2"></label>
+          <input
+            type="number"
+            id="phone"
+            class="p-3 border border-gray-300 rounded-lg w-full"
+            placeholder="Phone Number"
+          />
+        </div>
+        <div class="flex flex-col mb-4">
+          <label for="email" class="text-gray-700 mb-2"></label>
+          <input
+            type="email"
+            id="email"
+            class="p-3 border border-gray-300 rounded-lg w-full"
+            placeholder="Email Address"
+          />
+        </div>
+      </div>
+
+      <!-- Message Field -->
+      <div class="flex flex-col mb-6">
+        <label for="message" class="text-gray-700 mb-2"></label>
+        <textarea
+          id="message"
+          rows="4"
+          class="p-3 border border-gray-300 rounded-lg w-full"
+          placeholder="Write Your Message..."
+        ></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="flex justify-center items-center">
+        <button
+          class="flex items-center justify-center px-4 py-2 bg-green-400 text-black font-bold rounded-full w-full"
+        >
+          <span>Submit</span>
+          <div
+            class="ml-2 p-2 rounded-full bg-green-500 flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-white"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.293 16.293a1 1 0 011.414 0L14 6.707V11a1 1 0 102 0V4a1 1 0 00-1-1H9a1 1 0 100 2h4.586L4.707 14.707a1 1 0 000 1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </section>
   </body>
 </html>
