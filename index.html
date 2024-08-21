@@ -1,43 +1,161 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rinterio Navbar</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio</title>
     <!-- Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <!-- DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.1/dist/full.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.14.1/dist/full.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <nav class="container mx-auto flex items-center justify-between p-4 bg-gray-100">
-        <!-- Company Logo with Mark -->
-        <div class="flex items-center space-x-2">
-            <div class="p-2 rounded-full border-2 border-green-500">
-                <i class="fas fa-check"></i> <!-- Mark Sign -->
-            </div>
-            <span class="text-xl font-bold">Rinterio</span>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="container mx-auto flex items-center justify-between p-4 bg-gray-100"
+    >
+      <!-- Company Logo with Arrow -->
+      <div class="flex items-center space-x-2">
+        <div class="p-2 rounded-full bg-green-500">
+          <!-- New Arrow Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 text-black"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3.293 16.293a1 1 0 011.414 0L14 6.707V11a1 1 0 102 0V4a1 1 0 00-1-1H9a1 1 0 100 2h4.586L4.707 14.707a1 1 0 000 1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
         </div>
+        <span class="text-xl font-bold">Rinterio</span>
+      </div>
 
-        <!-- Navigation Links -->
-        <ul class="flex space-x-8">
-            <li><a href="#" class="text-gray-700 hover:text-black">Home</a></li>
-            <li><a href="#" class="text-gray-700 hover:text-black">Services</a></li>
-            <li><a href="#" class="text-gray-700 hover:text-black">Portfolio</a></li>
-            <li><a href="#" class="text-gray-700 hover:text-black">Blogs</a></li>
-            <li><a href="#" class="text-gray-700 hover:text-black">Contact Us</a></li>
-        </ul>
+      <!-- Navigation Links for Large Devices -->
+      <ul class="hidden md:flex space-x-8">
+        <li><a href="#" class="text-gray-700 hover:text-black">Home</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-black">Services</a></li>
+        <li>
+          <a href="#" class="text-gray-700 hover:text-black">Portfolio</a>
+        </li>
+        <li><a href="#" class="text-gray-700 hover:text-black">Blogs</a></li>
+        <li>
+          <a href="#" class="text-gray-700 hover:text-black">Contact Us</a>
+        </li>
+      </ul>
 
-        <!-- Icons and Button -->
-        <div class="flex items-center space-x-4">
-            <a href="#" class="text-gray-700 hover:text-black"><i class="fas fa-search"></i></a>
-            <a href="#" class="text-gray-700 hover:text-black"><i class="fas fa-shopping-cart"></i></a>
-            <button class="flex items-center px-4 py-2 bg-black text-white rounded-full">
-                Book Consultant <i class="fas fa-arrow-right ml-2"></i>
-            </button>
+      <div class="hidden md:flex items-center space-x-4">
+        <a href="#" class="text-black hover:text-gray-700"
+          ><i class="fas fa-search"></i
+        ></a>
+        <a href="#" class="text-black hover:text-gray-700"
+          ><i class="fas fa-shopping-cart"></i
+        ></a>
+        <button
+          class="flex items-center px-4 py-2 bg-green-500 text-white rounded-full"
+        >
+          Book Consultant
+
+          <div
+            class="flex items-center justify-center p-2 bg-black rounded-full ml-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-white"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.293 16.293a1 1 0 011.414 0L14 6.707V11a1 1 0 102 0V4a1 1 0 00-1-1H9a1 1 0 100 2h4.586L4.707 14.707a1 1 0 000 1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <!-- Dropdown for Small Devices -->
+      <div class="md:hidden flex items-center">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 max-w-xs p-2 shadow-lg absolute right-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                >Book Consultant</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-</body>
+  </body>
 </html>
